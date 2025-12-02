@@ -81,9 +81,9 @@ class Info extends Field
         
         $html .= '</table>';
         
-        $html .= '<div style="margin-top: 15px; padding-top: 15px; border-top: 1px solid #e3e3e3;">';
-        $html .= '<p><strong>Support:</strong> <a href="mailto:support@flipdev.com">support@flipdev.com</a></p>';
-        $html .= '<p><strong>Documentation:</strong> <a href="https://docs.flipdev.com" target="_blank">docs.flipdev.com</a></p>';
+        $html .= '<div style="margin-top: 15px; padding-top: 15px;">';
+        $html .= '<p><strong>Support:</strong> <a href="mailto:philippbreitsprecher@gmail.com">philippbreitsprecher@gmail.com</a></p>';
+        $html .= '<p><strong>Documentation:</strong> <a href="https://github.com/sickdaflip/mage2-core" target="_blank">https://github.com/sickdaflip/mage2-core</a></p>';
         $html .= '</div>';
         
         $html .= '</div>';
