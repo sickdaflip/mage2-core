@@ -227,6 +227,13 @@ mage2-core/
 │   ├── Logger/
 │   │   ├── Handler.php                   # Log handler
 │   │   └── Logger.php                    # Custom logger
+│   ├── view/
+│   │   └── adminhtml/
+│   │       ├── layout/
+│   │       │   └── adminhtml_system_config_edit.xml  # Admin layout
+│   │       └── web/
+│   │           └── css/
+│   │               └── flipdev-logo.css  # Tab logo styling
 │   └── etc/
 │       ├── acl.xml                       # Access control list
 │       ├── config.xml                    # Default configuration

@@ -28,6 +28,14 @@ mage2-core/
 │   │   ├── Handler.php                       # Log file handler
 │   │   └── Logger.php                        # Custom logger implementation
 │   │
+│   ├── view/
+│   │   └── adminhtml/
+│   │       ├── layout/
+│   │       │   └── adminhtml_system_config_edit.xml  # Admin system config layout
+│   │       └── web/
+│   │           └── css/
+│   │               └── flipdev-logo.css      # FlipDev tab logo styling
+│   │
 │   └── etc/
 │       ├── acl.xml                          # Access Control List
 │       ├── config.xml                       # Default configuration values
@@ -97,6 +105,13 @@ mage2-core/
 | File | Purpose |
 |------|---------|
 | `Console/Command/InfoCommand.php` | CLI command to show module info |
+
+### View/Layout Files
+
+| File | Purpose |
+|------|---------|
+| `view/adminhtml/layout/adminhtml_system_config_edit.xml` | Layout for system configuration pages |
+| `view/adminhtml/web/css/flipdev-logo.css` | CSS styling for FlipDev tab logo |
 
 ### Documentation
 
