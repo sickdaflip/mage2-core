@@ -28,6 +28,10 @@ mage2-core/
 │   │   ├── Handler.php                       # Log file handler
 │   │   └── Logger.php                        # Custom logger implementation
 │   │
+│   ├── i18n/
+│   │   ├── de_DE.csv                         # German translations
+│   │   └── en_US.csv                         # English translations
+│   │
 │   ├── view/
 │   │   └── adminhtml/
 │   │       ├── layout/
@@ -112,6 +116,13 @@ mage2-core/
 |------|---------|
 | `view/adminhtml/layout/adminhtml_system_config_edit.xml` | Layout for system configuration pages |
 | `view/adminhtml/web/css/flipdev-logo.css` | CSS styling for FlipDev tab logo |
+
+### Internationalization (i18n)
+
+| File | Purpose |
+|------|---------|
+| `i18n/de_DE.csv` | German language translations |
+| `i18n/en_US.csv` | English language translations (default) |
 
 ### Documentation
 

@@ -9,13 +9,14 @@ FlipDev_Core is the foundational module for all FlipDev extensions. It provides 
 
 ## Features
 
-✅ **Centralized Configuration Tab** - All FlipDev modules grouped under one admin tab  
-✅ **Custom Logger** - Dedicated logging system with debug mode  
-✅ **Helper Classes** - Config and Data helpers for common tasks  
-✅ **Console Commands** - CLI tools for module management  
-✅ **Version Tracking** - Display all installed FlipDev modules  
-✅ **ACL Support** - Granular permission control  
-✅ **Developer Tools** - Debug mode and custom log files  
+✅ **Centralized Configuration Tab** - All FlipDev modules grouped under one admin tab
+✅ **Custom Logger** - Dedicated logging system with debug mode
+✅ **Helper Classes** - Config and Data helpers for common tasks
+✅ **Console Commands** - CLI tools for module management
+✅ **Version Tracking** - Display all installed FlipDev modules
+✅ **ACL Support** - Granular permission control
+✅ **Developer Tools** - Debug mode and custom log files
+✅ **Internationalization** - Multi-language support (German & English)  
 
 ## Installation
 
@@ -227,6 +228,9 @@ mage2-core/
 │   ├── Logger/
 │   │   ├── Handler.php                   # Log handler
 │   │   └── Logger.php                    # Custom logger
+│   ├── i18n/
+│   │   ├── de_DE.csv                     # German translations
+│   │   └── en_US.csv                     # English translations
 │   ├── view/
 │   │   └── adminhtml/
 │   │       ├── layout/
@@ -268,6 +272,39 @@ Log format includes:
 - `FlipDev_Core::flipdev` - Main FlipDev resource
 - `FlipDev_Core::config` - Core configuration access
 - `FlipDev_Core::developer` - Developer tools access
+
+## Internationalization (i18n)
+
+The module includes full translation support for multiple languages:
+
+### Supported Languages
+
+- **English (en_US)** - Default language
+- **German (de_DE)** - Vollständige deutsche Übersetzung
+
+### Translation Files
+
+Translation files are located in `src/i18n/`:
+- `en_US.csv` - English translations
+- `de_DE.csv` - German translations
+
+### How Translations Work
+
+Magento automatically loads the appropriate translation file based on the store's locale configuration. All strings in the module are wrapped with translation functions (`__()`) to enable automatic translation.
+
+To change the admin panel language:
+1. Go to **Stores → Configuration → General → Locale Options**
+2. Select your preferred locale (e.g., German - Germany)
+3. Clear cache: `php bin/magento cache:flush`
+
+### Adding New Languages
+
+To add support for additional languages:
+
+1. Create a new CSV file in `src/i18n/` with the locale code (e.g., `fr_FR.csv` for French)
+2. Copy the content from `en_US.csv`
+3. Translate all strings in the second column
+4. Deploy static content: `php bin/magento setup:static-content:deploy <locale_code>`
 
 ## Support
 
