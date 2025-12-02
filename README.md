@@ -1,6 +1,6 @@
 # FlipDev_Core Module
 
-**Version:** 1.0.0  
+**Version:** 1.0.2  
 **Compatibility:** Magento 2.4.x
 
 ## Overview
@@ -318,7 +318,7 @@ Proprietary - Copyright (c) 2024 FlipDev
 
 ## Changelog
 
-### Version 1.0.0
+### Version 1.0.2
 - Initial release
 - Core tab and configuration
 - Helper classes
