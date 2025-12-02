@@ -3,7 +3,7 @@
     "description": "FlipDev Core Module - Base module for all FlipDev extensions",
     "type": "magento2-module",
     "version": "1.0.2",
-    "license": "proprietary",
+    "license": "MIT",
     "authors": [
         {
             "name": "Philipp Breitsprecher",
