@@ -334,14 +334,6 @@ chmod -R 777 var/ generated/ pub/static/
 
 ---
 
-## Need Help?
-
-- **Email:** support@flipdev.com
-- **Documentation:** https://docs.flipdev.com
-- **Community:** https://community.flipdev.com
-
----
-
 **Important Notes:**
 
 1. Always backup your database and files before installation
