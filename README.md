@@ -306,15 +306,9 @@ To add support for additional languages:
 3. Translate all strings in the second column
 4. Deploy static content: `php bin/magento setup:static-content:deploy <locale_code>`
 
-## Support
-
-- **Email:** support@flipdev.com
-- **Documentation:** https://docs.flipdev.com
-- **Issues:** Submit via your support portal
-
 ## License
 
-Proprietary - Copyright (c) 2024 FlipDev
+Proprietary - Copyright (c) 2025 FlipDev
 
 ## Changelog
 
