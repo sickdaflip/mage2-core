@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * FlipDev Core Default Configuration
+ *
+ * @category  FlipDev
+ * @package   FlipDev_Core
+ * @author    FlipDev <dev@flipdev.com>
+ * @copyright Copyright (c) 2024 FlipDev
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <flipdev_core>
+            <general>
+                <enabled>1</enabled>
+            </general>
+            <developer>
+                <debug_mode>0</debug_mode>
+                <log_file>flipdev.log</log_file>
+            </developer>
+        </flipdev_core>
+    </default>
+</config>

@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * FlipDev Core Module Configuration
+ *
+ * @category  FlipDev
+ * @package   FlipDev_Core
+ * @author    FlipDev <dev@flipdev.com>
+ * @copyright Copyright (c) 2024 FlipDev
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:Module/etc/module.xsd">
+    <module name="FlipDev_Core" setup_version="1.0.0">
+        <sequence>
+            <module name="Magento_Backend"/>
+            <module name="Magento_Config"/>
+        </sequence>
+    </module>
+</config>

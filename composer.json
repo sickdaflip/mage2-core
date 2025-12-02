@@ -1,0 +1,25 @@
+{
+    "name": "sickdaflip/mage2-core",
+    "description": "FlipDev Core Module - Base module for all FlipDev extensions",
+    "type": "magento2-module",
+    "version": "1.0.0",
+    "license": "proprietary",
+    "authors": [
+        {
+            "name": "Philipp Breitsprecher",
+            "email": "philippbreitsprecher@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^8.4",
+        "magento/framework": ">=103.0"
+    },
+    "autoload": {
+        "files": [
+          "src/registration.php"
+        ],
+        "psr-4": {
+            "FlipDev\\Core\\": "src/"
+        }
+    }
+}

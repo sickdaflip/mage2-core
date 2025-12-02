@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * FlipDev Core ACL Configuration
+ *
+ * @category  FlipDev
+ * @package   FlipDev_Core
+ * @author    FlipDev <dev@flipdev.com>
+ * @copyright Copyright (c) 2024 FlipDev
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:Acl/etc/acl.xsd">
+    <acl>
+        <resources>
+            <resource id="Magento_Backend::admin">
+                <!-- FlipDev Main Resource -->
+                <resource id="FlipDev_Core::flipdev" title="FlipDev Extensions" sortOrder="400">
+                    <!-- Core Module Configuration -->
+                    <resource id="FlipDev_Core::config" title="Core Configuration" sortOrder="10"/>
+                    
+                    <!-- Developer Tools -->
+                    <resource id="FlipDev_Core::developer" title="Developer Tools" sortOrder="90"/>
+                </resource>
+
+                <!-- Config Section Access -->
+                <resource id="Magento_Backend::stores">
+                    <resource id="Magento_Backend::stores_settings">
+                        <resource id="Magento_Config::config">
+                            <resource id="FlipDev_Core::config_flipdev" title="FlipDev Configuration"/>
+                        </resource>
+                    </resource>
+                </resource>
+            </resource>
+        </resources>
+    </acl>
+</config>

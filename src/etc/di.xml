@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * FlipDev Core Dependency Injection Configuration
+ *
+ * @category  FlipDev
+ * @package   FlipDev_Core
+ * @author    FlipDev <dev@flipdev.com>
+ * @copyright Copyright (c) 2024 FlipDev
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+
+    <!-- Logger Configuration -->
+    <type name="FlipDev\Core\Logger\Handler">
+        <arguments>
+            <argument name="filesystem" xsi:type="object">Magento\Framework\Filesystem\Driver\File</argument>
+        </arguments>
+    </type>
+
+    <type name="FlipDev\Core\Logger\Logger">
+        <arguments>
+            <argument name="name" xsi:type="string">FlipDev</argument>
+            <argument name="handlers" xsi:type="array">
+                <item name="system" xsi:type="object">FlipDev\Core\Logger\Handler</item>
+            </argument>
+        </arguments>
+    </type>
+
+    <!-- Virtual Types for specific module loggers -->
+    <virtualType name="FlipDevCoreLogger" type="FlipDev\Core\Logger\Logger">
+        <arguments>
+            <argument name="name" xsi:type="string">FlipDevCore</argument>
+        </arguments>
+    </virtualType>
+
+    <!-- Preferences -->
+    <preference for="FlipDev\Core\Api\LoggerInterface" type="FlipDev\Core\Logger\Logger"/>
+</config>

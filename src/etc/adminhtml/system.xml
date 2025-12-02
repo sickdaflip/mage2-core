@@ -1,0 +1,88 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * FlipDev Core System Configuration
+ *
+ * @category  FlipDev
+ * @package   FlipDev_Core
+ * @author    FlipDev <dev@flipdev.com>
+ * @copyright Copyright (c) 2024 FlipDev
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <!-- Main FlipDev Tab - Used by all FlipDev modules -->
+        <tab id="flipdev" translate="label" sortOrder="400">
+            <label>FlipDev Extensions</label>
+        </tab>
+
+        <!-- Core Module Configuration Section -->
+        <section id="flipdev_core" translate="label" type="text" sortOrder="10"
+                 showInDefault="1" showInWebsite="1" showInStore="1">
+            <label>Core Settings</label>
+            <tab>flipdev</tab>
+            <resource>FlipDev_Core::config</resource>
+
+            <!-- General Settings Group -->
+            <group id="general" translate="label" type="text" sortOrder="10"
+                   showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>General Configuration</label>
+
+                <field id="enabled" translate="label comment" type="select" sortOrder="10"
+                       showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Enable FlipDev Extensions</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                    <comment>Master switch for all FlipDev modules</comment>
+                </field>
+
+                <field id="license_key" translate="label comment" type="text" sortOrder="20"
+                       showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>License Key</label>
+                    <comment>Enter your FlipDev license key (if applicable)</comment>
+                    <backend_model>Magento\Config\Model\Config\Backend\Encrypted</backend_model>
+                </field>
+            </group>
+
+            <!-- Developer Settings Group -->
+            <group id="developer" translate="label" type="text" sortOrder="20"
+                   showInDefault="1" showInWebsite="0" showInStore="0">
+                <label>Developer Settings</label>
+
+                <field id="debug_mode" translate="label comment" type="select" sortOrder="10"
+                       showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Debug Mode</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                    <comment>Enable detailed logging for all FlipDev modules</comment>
+                </field>
+
+                <field id="log_file" translate="label comment" type="text" sortOrder="20"
+                       showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Custom Log File</label>
+                    <comment>Default: var/log/flipdev.log</comment>
+                    <depends>
+                        <field id="debug_mode">1</field>
+                    </depends>
+                </field>
+            </group>
+
+            <!-- About Group -->
+            <group id="about" translate="label" type="text" sortOrder="100"
+                   showInDefault="1" showInWebsite="0" showInStore="0">
+                <label>About FlipDev</label>
+
+                <field id="version" translate="label" type="label" sortOrder="10"
+                       showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Core Module Version</label>
+                    <frontend_model>FlipDev\Core\Block\Adminhtml\System\Config\Version</frontend_model>
+                </field>
+
+                <field id="info" translate="label" type="label" sortOrder="20"
+                       showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Information</label>
+                    <frontend_model>FlipDev\Core\Block\Adminhtml\System\Config\Info</frontend_model>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>
