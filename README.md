@@ -22,24 +22,12 @@ FlipDev_Core is the foundational module for all FlipDev extensions. It provides 
 ### Via Composer (Recommended)
 
 ```bash
-composer require flipdev/module-core
+composer config repositories.sickdaflip/mage2-core vcs https://github.com/sickdaflip/mage2-core.git
+composer require sickdaflip/mage2-core:dev-main
 php bin/magento module:enable FlipDev_Core
 php bin/magento setup:upgrade
 php bin/magento setup:di:compile
 php bin/magento setup:static-content:deploy
-php bin/magento cache:flush
-```
-
-### Manual Installation
-
-1. Create directory: `app/code/FlipDev/Core`
-2. Copy all module files to this directory
-3. Run setup commands:
-
-```bash
-php bin/magento module:enable FlipDev_Core
-php bin/magento setup:upgrade
-php bin/magento setup:di:compile
 php bin/magento cache:flush
 ```
 
