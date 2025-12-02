@@ -20,6 +20,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - ACL resources for permission management
 - Default configuration values
 - Comprehensive README documentation
+- FlipDev logo styling for admin configuration tab
+- Internationalization (i18n) support with German and English translations
+- Translation files: `de_DE.csv` (German), `en_US.csv` (English)
 
 ### Features
 - Master enable/disable switch for all FlipDev extensions
