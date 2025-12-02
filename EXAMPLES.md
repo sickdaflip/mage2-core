@@ -543,7 +543,3 @@ $this->logger->logWithModule(
 - [Installation Guide](INSTALLATION.md)
 - [Changelog](CHANGELOG.md)
 - [Magento 2 DevDocs](https://devdocs.magento.com/)
-
----
-
-**Need more examples?** Contact support@flipdev.com
