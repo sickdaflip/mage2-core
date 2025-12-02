@@ -1,5 +1,7 @@
 # FlipDev_Core Module
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/4dfd7e704596462db7358f49dd76cabc)](https://app.codacy.com/gh/sickdaflip/mage2-core?utm_source=github.com&utm_medium=referral&utm_content=sickdaflip/mage2-core&utm_campaign=Badge_Grade)
+
 **Version:** 1.0.2  
 **Compatibility:** Magento 2.4.x
 
