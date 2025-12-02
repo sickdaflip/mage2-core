@@ -3,46 +3,48 @@
 ## Complete Directory Tree
 
 ```
-FlipDev_Core/
+mage2-core/
 │
-├── Api/
-│   └── LoggerInterface.php               # Logger API interface
-│
-├── Block/
-│   └── Adminhtml/
-│       └── System/
-│           └── Config/
-│               ├── Info.php              # Module information display block
-│               └── Version.php           # Version display block
-│
-├── Console/
-│   └── Command/
-│       └── InfoCommand.php               # CLI command: flipdev:info
-│
-├── Helper/
-│   ├── Config.php                        # Configuration helper
-│   └── Data.php                          # General data/utility helper
-│
-├── Logger/
-│   ├── Handler.php                       # Log file handler
-│   └── Logger.php                        # Custom logger implementation
-│
-├── etc/
-│   ├── acl.xml                          # Access Control List
-│   ├── config.xml                       # Default configuration values
-│   ├── di.xml                           # Dependency Injection config
-│   ├── module.xml                       # Module declaration
+├── src/
+│   ├── Api/
+│   │   └── LoggerInterface.php               # Logger API interface
 │   │
-│   ├── adminhtml/
-│   │   └── system.xml                   # Admin configuration structure
+│   ├── Block/
+│   │   └── Adminhtml/
+│   │       └── System/
+│   │           └── Config/
+│   │               ├── Info.php              # Module information display block
+│   │               └── Version.php           # Version display block
 │   │
-│   └── console/
-│       └── di.xml                       # Console commands DI config
+│   ├── Console/
+│   │   └── Command/
+│   │       └── InfoCommand.php               # CLI command: flipdev:info
+│   │
+│   ├── Helper/
+│   │   ├── Config.php                        # Configuration helper
+│   │   └── Data.php                          # General data/utility helper
+│   │
+│   ├── Logger/
+│   │   ├── Handler.php                       # Log file handler
+│   │   └── Logger.php                        # Custom logger implementation
+│   │
+│   └── etc/
+│       ├── acl.xml                          # Access Control List
+│       ├── config.xml                       # Default configuration values
+│       ├── di.xml                           # Dependency Injection config
+│       ├── module.xml                       # Module declaration
+│       │
+│       ├── adminhtml/
+│       │   └── system.xml                   # Admin configuration structure
+│       │
+│       └── console/
+│           └── di.xml                       # Console commands DI config
 │
 ├── .gitignore                           # Git ignore rules
 ├── CHANGELOG.md                         # Version history and changes
 ├── EXAMPLES.md                          # Usage examples
 ├── INSTALLATION.md                      # Detailed installation guide
+├── MODULE_STRUCTURE.md                  # This file
 ├── README.md                            # Main documentation
 ├── composer.json                        # Composer package definition
 └── registration.php                     # Module registration

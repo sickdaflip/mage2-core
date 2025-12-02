@@ -208,36 +208,41 @@ In `etc/adminhtml/system.xml`:
 ## File Structure
 
 ```
-FlipDev_Core/
-├── Api/
-│   └── LoggerInterface.php           # Logger API interface
-├── Block/
-│   └── Adminhtml/
-│       └── System/
-│           └── Config/
-│               ├── Info.php          # Module info display
-│               └── Version.php       # Version display
-├── Console/
-│   └── Command/
-│       └── InfoCommand.php           # CLI info command
-├── Helper/
-│   ├── Config.php                    # Configuration helper
-│   └── Data.php                      # General data helper
-├── Logger/
-│   ├── Handler.php                   # Log handler
-│   └── Logger.php                    # Custom logger
-├── etc/
-│   ├── acl.xml                       # Access control list
-│   ├── config.xml                    # Default configuration
-│   ├── di.xml                        # Dependency injection
-│   ├── module.xml                    # Module declaration
-│   ├── adminhtml/
-│   │   └── system.xml                # Admin configuration
-│   └── console/
-│       └── di.xml                    # Console commands DI
-├── composer.json                     # Composer configuration
-├── registration.php                  # Module registration
-└── README.md                         # This file
+mage2-core/
+├── src/
+│   ├── Api/
+│   │   └── LoggerInterface.php           # Logger API interface
+│   ├── Block/
+│   │   └── Adminhtml/
+│   │       └── System/
+│   │           └── Config/
+│   │               ├── Info.php          # Module info display
+│   │               └── Version.php       # Version display
+│   ├── Console/
+│   │   └── Command/
+│   │       └── InfoCommand.php           # CLI info command
+│   ├── Helper/
+│   │   ├── Config.php                    # Configuration helper
+│   │   └── Data.php                      # General data helper
+│   ├── Logger/
+│   │   ├── Handler.php                   # Log handler
+│   │   └── Logger.php                    # Custom logger
+│   └── etc/
+│       ├── acl.xml                       # Access control list
+│       ├── config.xml                    # Default configuration
+│       ├── di.xml                        # Dependency injection
+│       ├── module.xml                    # Module declaration
+│       ├── adminhtml/
+│       │   └── system.xml                # Admin configuration
+│       └── console/
+│           └── di.xml                    # Console commands DI
+├── CHANGELOG.md                          # Version history
+├── EXAMPLES.md                           # Usage examples
+├── INSTALLATION.md                       # Installation guide
+├── MODULE_STRUCTURE.md                   # Detailed structure
+├── README.md                             # This file
+├── composer.json                         # Composer configuration
+└── registration.php                      # Module registration
 ```
 
 ## Log Files

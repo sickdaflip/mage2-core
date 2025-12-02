@@ -51,36 +51,55 @@ php bin/magento cache:flush
 
 ### Method 2: Manual Installation
 
-#### Step 1: Create module directory
+#### Step 1: Clone or download the repository
 
 ```bash
-mkdir -p app/code/FlipDev/Core
+cd /path/to/your/modules
+git clone https://github.com/sickdaflip/mage2-core.git
+cd mage2-core
 ```
 
-#### Step 2: Upload files
-
-Upload all module files to `app/code/FlipDev/Core/`
+Or download and extract to your modules directory.
 
 Ensure the following structure:
 ```
-app/code/FlipDev/Core/
-├── Api/
-├── Block/
-├── Console/
-├── Helper/
-├── Logger/
-├── etc/
+mage2-core/
+├── src/
+│   ├── Api/
+│   ├── Block/
+│   ├── Console/
+│   ├── Helper/
+│   ├── Logger/
+│   └── etc/
 ├── composer.json
 ├── registration.php
 └── README.md
 ```
 
-#### Step 3: Set correct file permissions
+#### Step 2: Set correct file permissions
 
 ```bash
+cd mage2-core
+find . -type f -exec chmod 644 {} \;
+find . -type d -exec chmod 755 {} \;
+```
+
+#### Step 3: Link or install via Composer
+
+If using Composer path repository, add to your Magento's `composer.json`:
+```json
+"repositories": [
+    {
+        "type": "path",
+        "url": "/path/to/mage2-core"
+    }
+]
+```
+
+Then run:
+```bash
 cd /path/to/magento
-find app/code/FlipDev/Core -type f -exec chmod 644 {} \;
-find app/code/FlipDev/Core -type d -exec chmod 755 {} \;
+composer require sickdaflip/mage2-core:@dev
 ```
 
 #### Step 4: Enable the module
@@ -238,8 +257,12 @@ php bin/magento cache:flush
 # Disable module
 php bin/magento module:disable FlipDev_Core
 
-# Remove files
-rm -rf app/code/FlipDev/Core
+# If installed via Composer path repository
+cd /path/to/magento
+composer remove sickdaflip/mage2-core
+
+# Remove module directory (if not using Composer)
+rm -rf /path/to/mage2-core
 
 # Run setup upgrade
 php bin/magento setup:upgrade

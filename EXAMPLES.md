@@ -18,7 +18,7 @@ This document provides practical examples of how to use FlipDev_Core in your cus
 
 ### Example: Creating a new FlipDev module that depends on Core
 
-**File: `app/code/FlipDev/ProductOptionsMedia/etc/module.xml`**
+**File: `src/etc/module.xml`** (in your FlipDev_ProductOptionsMedia repository)
 
 ```xml
 <?xml version="1.0"?>
@@ -33,7 +33,7 @@ This document provides practical examples of how to use FlipDev_Core in your cus
 </config>
 ```
 
-**File: `app/code/FlipDev/ProductOptionsMedia/etc/adminhtml/system.xml`**
+**File: `src/etc/adminhtml/system.xml`** (in your FlipDev_ProductOptionsMedia repository)
 
 ```xml
 <?xml version="1.0"?>
