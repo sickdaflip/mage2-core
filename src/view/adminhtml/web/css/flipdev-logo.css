@@ -3,16 +3,8 @@
  * Adds FlipDev logo to the admin configuration tab
  */
 
-/* Base logo styling - shared across all selectors */
-#system_config_tabs-flipdev::before,
-#system_config_tabs-flipdev a::before,
-#system_config_tabs-flipdev strong::before,
-a[data-ui-id="system-config-tabs-flipdev"]::before,
-a[href*="section/flipdev"]::before,
-.admin__page-nav-item[data-ui-id*="flipdev"] .admin__page-nav-item-title::before,
-/* Legacy selectors for older Magento versions */
-.config-nav-block a[href*="flipdev"]::before,
-#system_config_tabs a[href*="flipdev"]::before {
+/* Primary selector using the tabs-flipdev class */
+.tabs-flipdev strong::before {
     content: "" !important;
     display: inline-block !important;
     width: 16px !important;
