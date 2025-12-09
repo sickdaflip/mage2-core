@@ -13,8 +13,8 @@
         xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
     <system>
         <!-- Main FlipDev Tab - Used by all FlipDev modules -->
-        <tab id="flipdev" translate="label" sortOrder="400">
-            <label>FlipDev Extensions</label>
+        <tab id="flipdev" translate="label" sortOrder="400" class="tabs-flipdev">
+            <label>FlipDev</label>
         </tab>
 
         <!-- Core Module Configuration Section -->

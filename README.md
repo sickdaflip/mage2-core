@@ -1,6 +1,6 @@
 # FlipDev_Core Module
 
-**Version:** 1.0.2  
+**Version:** 1.0.3
 **Compatibility:** Magento 2.4.x
 
 [![Codacy Badge](https://app.codacy.com/project/badge/Grade/c8d203478dac43e19e5bab3fd3a30e65)](https://app.codacy.com/gh/sickdaflip/mage2-core/dashboard?utm_source=gh&utm_medium=referral&utm_content=&utm_campaign=Badge_grade)
@@ -36,7 +36,7 @@ php bin/magento cache:flush
 
 ## Configuration
 
-Navigate to: **Stores → Configuration → FlipDev Extensions → Core Settings**
+Navigate to: **Stores → Configuration → FlipDev → Core Settings**
 
 ### General Configuration
 - **Enable FlipDev Extensions** - Master switch for all modules
