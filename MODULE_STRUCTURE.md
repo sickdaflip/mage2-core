@@ -137,7 +137,7 @@ mage2-core/
 
 ### System Configuration Section
 ```
-Stores → Configuration → FlipDev Extensions → Core Settings
+Stores → Configuration → FlipDev → Core Settings
 ```
 
 ### Configuration Path Structure
@@ -296,5 +296,5 @@ $this->dataHelper->sanitizeFilename($filename)
 
 ---
 
-**Last Updated:** 2025-12-02  
-**Module Version:** 1.0.2
+**Last Updated:** 2025-12-09
+**Module Version:** 1.0.3

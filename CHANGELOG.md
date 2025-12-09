@@ -9,7 +9,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 - Initial release of FlipDev_Core module
-- Centralized FlipDev Extensions tab in admin configuration
+- Centralized FlipDev tab in admin configuration
 - Core configuration section with general and developer settings
 - Config Helper class for easy configuration access
 - Data Helper class with common utility functions

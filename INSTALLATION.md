@@ -156,7 +156,7 @@ Expected output: Should display FlipDev module information
 
 1. Log in to Magento Admin
 2. Navigate to **Stores → Configuration**
-3. Look for **FlipDev Extensions** tab
+3. Look for **FlipDev** tab
 4. Click on **Core Settings**
 5. You should see the configuration options
 
@@ -166,7 +166,7 @@ Expected output: Should display FlipDev module information
 
 ### 1. Enable FlipDev Extensions
 
-Navigate to: **Stores → Configuration → FlipDev Extensions → Core Settings**
+Navigate to: **Stores → Configuration → FlipDev → Core Settings**
 
 - Set **Enable FlipDev Extensions** to **Yes**
 - Click **Save Config**
@@ -284,7 +284,7 @@ FlipDev_Core supports multi-store configurations. After installation:
 
 1. Go to **Stores → Configuration**
 2. Select your store view from **Store View** dropdown
-3. Navigate to **FlipDev Extensions → Core Settings**
+3. Navigate to **FlipDev → Core Settings**
 4. Uncheck **Use Website** or **Use Default** for settings you want to customize
 5. Configure settings per store view
 6. Save configuration

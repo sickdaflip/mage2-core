@@ -15,7 +15,7 @@
         <resources>
             <resource id="Magento_Backend::admin">
                 <!-- FlipDev Main Resource -->
-                <resource id="FlipDev_Core::flipdev" title="FlipDev Extensions" sortOrder="400">
+                <resource id="FlipDev_Core::flipdev" title="FlipDev" sortOrder="400">
                     <!-- Core Module Configuration -->
                     <resource id="FlipDev_Core::config" title="Core Configuration" sortOrder="10"/>
                     

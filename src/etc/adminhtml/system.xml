@@ -14,7 +14,7 @@
     <system>
         <!-- Main FlipDev Tab - Used by all FlipDev modules -->
         <tab id="flipdev" translate="label" sortOrder="400" class="tabs-flipdev">
-            <label>FlipDev Extensions</label>
+            <label>FlipDev</label>
         </tab>
 
         <!-- Core Module Configuration Section -->

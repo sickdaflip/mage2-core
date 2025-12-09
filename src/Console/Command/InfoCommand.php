@@ -68,8 +68,8 @@ class InfoCommand extends Command
     protected function execute(InputInterface $input, OutputInterface $output): int
     {
         $output->writeln('');
-        $output->writeln('<info>FlipDev Extensions Information</info>');
-        $output->writeln('<info>================================</info>');
+        $output->writeln('<info>FlipDev Information</info>');
+        $output->writeln('<info>==================</info>');
         $output->writeln('');
 
         // Display configuration status
